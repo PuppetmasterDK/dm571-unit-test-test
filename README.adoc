@@ -10,8 +10,6 @@ Gradle will automatically download all required dependencies, compile the projec
 - JDK 8 or higher
 - Gradle use `gradlew` wrapper
 
-NOTE: This example shows the usage of Spock 2.0, which uses the JUnit Platform. If you want to see how to get Spock 1.x with JUnit 4 up and running see the https://github.com/spockframework/spock-example/tree/spock-1.x[Spock-1.x] Branch.
-
 === Building with Gradle
 Type:
 
