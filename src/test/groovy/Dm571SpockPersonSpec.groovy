@@ -7,29 +7,6 @@ import spock.lang.Specification
 class Dm571SpockPersonSpec extends Specification {
 // end::ignore[]
 
-    class Person {
-        protected int birthYear
-        protected String name;
-
-        Person(int birthYear, String name) {
-            this.birthYear = birthYear
-            this.name = name
-        }
-
-        int getBirthYear() {
-            return birthYear
-        }
-
-        String getName() {
-            return name
-        }
-
-        @Override
-        String toString() {
-            return name + ' is born in ' + birthYear;
-        }
-    }
-
     // tag::personTestConstructor[]
     def "test a Person with name '#name' and age '#birthYear'"() {
         // TODO: Test that you can construct a new instance and get the correct name and birthYear

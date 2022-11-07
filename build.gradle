@@ -1,4 +1,5 @@
 apply plugin: "groovy"
+apply plugin: "jacoco"
 
 version = "1.0"
 description = "DM571 Unit Test Test"
@@ -24,10 +25,23 @@ dependencies {
     testImplementation 'org.slf4j:slf4j-api:1.7.30'
 }
 
+sourceSets {
+    main {
+        groovy {
+            srcDirs = ['src/main']
+        }
+    }
+}
+
 test {
     useJUnitPlatform()
     testLogging {
         events "passed", "skipped", "failed"
     }
+    finalizedBy jacocoTestReport // report is always generated after tests run
+}
+
+jacocoTestReport {
+    dependsOn test // tests are required to run before generating the report
 }
 
