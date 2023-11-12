@@ -28,7 +28,7 @@ class Dm571SpockSpec extends Specification {
     @Unroll("Two strings '#a' and '#b'")
     def "test lowercase with data"() {
         // TODO: Make a test that tests the .toLowerCase() method using a Data Tables
-        // TODO: Hint: Look here: https://spockframework.org/spock/docs/1.0/data_driven_testing.html at the Data Tables section ;)
+        // TODO: Hint: Look here: https://spockframework.org/spock/docs/2.3/data_driven_testing.html at the Data Tables section ;)
     }
     // end::lowercaseTestDataDriven[]
 
